@@ -1,6 +1,6 @@
 # PMSM Flux Guides and Rotor Surfacing
 
-Research materials for the study **Codesign of Contour-Conformal Flux Guides and Three-Arc Rotor Surfacing for Permanent Magnet Synchronous Machines**.
+Supplementary materials for the study **Codesign of Contour-Conformal Flux Guides and Three-Arc Rotor Surfacing for Permanent Magnet Synchronous Machines**.
 
 The project investigates how rotor air-gap contouring and internal flux guidance interact in an interior permanent-magnet synchronous machine (IPMSM). The work combines electromagnetic finite-element analysis with structural, thermal, prototype, and vibration results.
 
@@ -18,42 +18,6 @@ The project investigates how rotor air-gap contouring and internal flux guidance
 
 The supplementary material reports the structural operating points as 72 N m at 4000 rpm, 39.21 N m at 12000 rpm, 180 N m at 4000 rpm, and 46.21 N m at 12000 rpm. The reported governing structural result is 108.78 MPa maximum stress and 0.0295 mm maximum deformation at 12 krpm.
 
-## Repository contents
-
-| Path | Description |
-| --- | --- |
-| `TIE_LaTeX_template_v2 - Copy/` | Main manuscript source, IEEE journal classes, bibliography, and manuscript figures |
-| `supplymentry/` | Supplementary-material source, compiled PDF, and supporting figures |
-| `AUDIT_ACTIONS.md` | Pre-submission audit and list of issues requiring resolution |
-| `Claude outputs/` | Referee reports and review artifacts |
-| `Sample_papers/` | Reference papers collected during the literature review |
-
-The repository is primarily a document and research-results archive. It does not currently contain the finite-element project files, raw measurement files, simulation scripts, CAD source, or a turnkey numerical reproduction pipeline.
-
-## Building the documents
-
-Install a LaTeX distribution such as TeX Live or MiKTeX, together with `latexmk` and the packages required by IEEEtran and the manuscript sources.
-
-### Supplementary material
-
-From `supplymentry/`, run:
-
-```text
-latexmk -pdf Journal.tex
-```
-
-The supplementary source expects its figures to be available in the same directory. The compiled document is `supplymentry/Journal.pdf`.
-
-### Main manuscript
-
-From `TIE_LaTeX_template_v2 - Copy/`, run:
-
-```text
-latexmk -pdf TEC_main.tex
-```
-
-Depending on the local TeX installation, the bibliography may need to be built with BibTeX as part of the `latexmk` run. The bibliography files are in `TIE_LaTeX_template_v2 - Copy/Bibliography/`.
-
 ## Interpreting the results
 
 The manuscript uses finite-element results to compare rotor geometries and to assess electromagnetic, mechanical, and thermal behaviour. The supplementary material contains:
@@ -64,8 +28,6 @@ The manuscript uses finite-element results to compare rotor geometries and to as
 - flux-guide parameter sweeps;
 - inductance and load-angle results; and
 - rated-point thermal maps with and without rotor ducts.
-
-These files document the current research and revision state. They should not be treated as a validated software release or as a complete reproduction package.
 
 ## Validation status
 
