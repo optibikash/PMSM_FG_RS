@@ -1,5 +1,6 @@
 # PMSM Flux Guides and Rotor Surfacing
 
+**Please click** on the **Supplementary_file.pdf** to open the required file. 
 Supplementary materials for the study **Codesign of Contour-Conformal Flux Guides and Three-Arc Rotor Surfacing for Permanent Magnet Synchronous Machines**.
 
 The project investigates how rotor air-gap contouring and internal flux guidance interact in an interior permanent-magnet synchronous machine (IPMSM). The work combines electromagnetic finite-element analysis with structural, thermal, prototype, and vibration results.
